@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css",
-    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.c2d49cba.js",
+    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.190b5daf.js",
     "static/media/Amogh.jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
     "index.html": "/Amogh-Phadnis-Portfolio/index.html",
     "main.47f960c4.css.map": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css.map",
-    "main.c2d49cba.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.c2d49cba.js.map"
+    "main.190b5daf.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.190b5daf.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.c2d49cba.js"
+    "static/js/main.190b5daf.js"
   ]
 }
