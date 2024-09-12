@@ -36,7 +36,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router>
+      <Router basename="/Amogh-Phadnis-Portfolio">
         <Box
           sx={{
             display: 'flex',
