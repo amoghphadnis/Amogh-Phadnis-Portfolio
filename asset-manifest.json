@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css",
-    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.1f701e32.js",
-    "static/media/Amogh(2).jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh(2).40b5a003e03583712fea.jpg",
-    "static/media/Amogh.jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
-    "index.html": "/Amogh-Phadnis-Portfolio/index.html",
-    "main.47f960c4.css.map": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css.map",
-    "main.1f701e32.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.1f701e32.js.map"
+    "main.css": "/static/css/main.47f960c4.css",
+    "main.js": "/static/js/main.745f8472.js",
+    "static/media/Amogh(2).jpg": "/static/media/Amogh(2).40b5a003e03583712fea.jpg",
+    "static/media/Amogh.jpg": "/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
+    "index.html": "/index.html",
+    "main.47f960c4.css.map": "/static/css/main.47f960c4.css.map",
+    "main.745f8472.js.map": "/static/js/main.745f8472.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.1f701e32.js"
+    "static/js/main.745f8472.js"
   ]
 }
