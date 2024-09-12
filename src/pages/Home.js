@@ -62,7 +62,7 @@ const Home = () => {
             A Web Developer with a strong track record of crafting successful web applications.<br />
             Here you can find more about my skills, experience, and projects.
           </Typography>
-          <Button variant='contained' href='/About' style={{
+          <Button variant='contained' href='/Amogh-Phadnis-Portfolio/about' style={{
             background: 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
             color: '#000000',
             borderRadius: 12,
