@@ -62,7 +62,7 @@ const Home = () => {
             A Web Developer with a strong track record of crafting successful web applications.<br />
             Here you can find more about my skills, experience, and projects.
           </Typography>
-          <Button variant='contained' href='/Amogh-Phadnis-Portfolio/about' style={{
+          <Button variant='contained' href='/About' style={{
             background: 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
             color: '#000000',
             borderRadius: 12,
@@ -207,7 +207,7 @@ const Home = () => {
             </Grid>
             <Grid  container justifyContent="center" spacing={4} style={{ marginTop: 10 }}>
               <Grid item>
-                <Link href="/Amogh-Phadnis-Portfolio/projects" style={{textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none'}}>{'View all Projects'}</Link>
+                <Link href="/Projects" style={{textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none'}}>{'View all Projects'}</Link>
               </Grid>
             </Grid>
           </Grid>
@@ -223,7 +223,7 @@ const Home = () => {
             Get in Touch
           </Typography>
         </Divider>
-          <Button variant='contained' href='/Amogh-Phadnis-Portfolio/contact' loading="lazy" style={{
+          <Button variant='contained' href='/Contact' loading="lazy" style={{
             background: theme.palette.mode === 'dark' ? 'linear-gradient(to right bottom, #0172AF, #74FEBD)' : 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
             color: theme.palette.mode === 'dark' ? '#000000' : '#000000',
             borderRadius: 12,
