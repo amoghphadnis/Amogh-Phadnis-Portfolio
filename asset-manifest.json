@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.47f960c4.css",
-    "main.js": "/static/js/main.745f8472.js",
+    "main.js": "/static/js/main.5e3c4bdc.js",
     "static/media/Amogh(2).jpg": "/static/media/Amogh(2).40b5a003e03583712fea.jpg",
     "static/media/Amogh.jpg": "/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
     "index.html": "/index.html",
     "main.47f960c4.css.map": "/static/css/main.47f960c4.css.map",
-    "main.745f8472.js.map": "/static/js/main.745f8472.js.map"
+    "main.5e3c4bdc.js.map": "/static/js/main.5e3c4bdc.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.745f8472.js"
+    "static/js/main.5e3c4bdc.js"
   ]
 }
