@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Box, IconButton, Typography } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -36,7 +36,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Router basename="/Amogh-Phadnis-Portfolio">
+      <Router>
         <Box
           sx={{
             display: 'flex',
@@ -67,9 +67,9 @@ const App = () => {
               </IconButton>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Projects" element={<Projects />} />
+                <Route path="/Contact" element={<Contact />} />
               </Routes>
             </Box>
           </Box>

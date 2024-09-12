@@ -15,10 +15,10 @@ const Item = styled(Paper)(({ theme }) => ({
 const About = () => {
   return (
     <Container>
-      <Typography variant="h3" style={{ fontWeight: 'bold', marginTop: '2rem' }}>
+      <Typography variant="h3" style={{ fontWeight: 'bold', marginTop: '2rem', fontSize: '2em' }}>
         Amogh Anand Phadnis
       </Typography>
-      <Box sx={{ flexGrow: 1, marginTop: '2rem', backdropFilter: 'blur(30px)' }}>
+      <Box sx={{ flexGrow: 1, marginTop: '2rem' }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={8}>
             <Item>

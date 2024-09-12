@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Typography, Card, CardContent, CardHeader, Grid, Button, Grow, Fade, Slide, Divider, Link, Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Container, Typography, Card, CardContent, CardHeader, Grid, Button, Grow, Fade, Slide, Divider, Link as MuiLink, Avatar } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Amogh from '../Images/Amogh.jpg';
 import { FaCss3Alt, FaPhp, FaCode, FaReact, FaBootstrap, FaNodeJs, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -16,7 +17,7 @@ const cardStyles = (theme) => ({
   color: theme.palette.mode === 'dark' ? '#000000' : '#000000',
   borderRadius: 12,
   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-  padding: 10,
+  padding: 5,
   transition: 'transform 0.3s ease-in-out, box-shadow 0.3s',
   '&:hover': {
     transform: 'scale(1.05)',
@@ -62,7 +63,7 @@ const Home = () => {
             A Web Developer with a strong track record of crafting successful web applications.<br />
             Here you can find more about my skills, experience, and projects.
           </Typography>
-          <Button variant='contained' href='/About' style={{
+          <Button variant='contained' component={Link} to="/About" style={{
             background: 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
             color: '#000000',
             borderRadius: 12,
@@ -207,7 +208,7 @@ const Home = () => {
             </Grid>
             <Grid  container justifyContent="center" spacing={4} style={{ marginTop: 10 }}>
               <Grid item>
-                <Link href="/Projects" style={{textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none'}}>{'View all Projects'}</Link>
+                <MuiLink component={Link} to="/Projects" style={{textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none'}}>{'View all Projects'}</MuiLink>
               </Grid>
             </Grid>
           </Grid>
@@ -223,7 +224,7 @@ const Home = () => {
             Get in Touch
           </Typography>
         </Divider>
-          <Button variant='contained' href='/Contact' loading="lazy" style={{
+          <Button variant='contained' component={Link} to="/Contact" loading="lazy" style={{
             background: theme.palette.mode === 'dark' ? 'linear-gradient(to right bottom, #0172AF, #74FEBD)' : 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
             color: theme.palette.mode === 'dark' ? '#000000' : '#000000',
             borderRadius: 12,
@@ -248,13 +249,13 @@ const Home = () => {
         <Grid container justifyContent="center" spacing={4} style={{ marginTop: 20 }}>
             {/* Tech Stack Icons */}
             <Grid item>
-              <Link href="https://www.linkedin.com/in/amogh-anand-phadnis/" target="_blank"><FaLinkedin style={{ fontSize: 40 }} /></Link>
+              <MuiLink href="https://www.linkedin.com/in/amogh-anand-phadnis/" target="_blank"><FaLinkedin style={{ fontSize: 40 }} /></MuiLink>
             </Grid>
             <Grid item>
-            <Link href="https://www.instagram.com/amoghphadnis/" target="_blank"><FaInstagram style={{ fontSize: 40 }} /></Link>
+            <MuiLink href="https://www.instagram.com/amoghphadnis/" target="_blank"><FaInstagram style={{ fontSize: 40 }} /></MuiLink>
             </Grid>
             <Grid item>
-            <Link href="https://github.com/amoghphadnis" target="_blank"><FaGithub style={{ fontSize: 40 }} /></Link>
+            <MuiLink href="https://github.com/amoghphadnis" target="_blank"><FaGithub style={{ fontSize: 40 }} /></MuiLink>
             </Grid>
           </Grid>
 
