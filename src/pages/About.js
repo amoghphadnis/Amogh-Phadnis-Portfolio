@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Container, Typography, Avatar, List, ListItem, Button } from '@mui/material';
+import React, {useState} from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Container, Typography, Avatar, List, ListItem, Button, Link } from '@mui/material';
+import { PiHandTapDuotone } from "react-icons/pi";
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -16,6 +17,15 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const About = () => {
+  const [highlightLink, setHighlightLink] = useState(false);
+
+  // CSS for link highlight
+  const linkStyle = {
+    color: highlightLink ? '#ffffff' : '#59EBCB',
+    fontWeight: highlightLink ? 'bold' : 'normal',
+    Scale: highlightLink ? '3.0' : '1.0',
+    transition: 'color 0.3s, font-weight 0.3s infinite, Scale 0.5s',
+  };
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
@@ -141,13 +151,52 @@ const About = () => {
             <Item style={{ textAlign: 'left' }}>
               <Typography variant="h4">Projects and Achievements:</Typography>
               <Typography variant="body1">
-                Some of my key projects include:
+                Some of my key Achievements include:
               </Typography>
               <List>
-                <ListItem>Eat Well Nutri-Tech: A quick commerce app for a food kiosk in Bengaluru.</ListItem>
-                <ListItem>WatchWorld: An eCommerce platform for selling watches.</ListItem>
-                {/* Add other projects */}
+                <ListItem>
+                  <Typography variant="body1">
+                    <b>First Prize – Magnum (Inter-class Coding Fest)</b>: Debugged code in C and C++, developed web pages with HTML/CSS, and visualized data using R language in three different rounds.
+                  </Typography>
+                </ListItem>
+                <ListItem>
+                  <Typography variant="body1">
+                    <b>Runner-up – Prodigy (Inter-college Coding Fest)</b>: Secured second place in a coding event conducted by Jain BCA College, Belgaum.
+                  </Typography>
+                </ListItem>
               </List>
+              <>
+                <Typography variant="body1">
+                  For Projects please <Link component={RouterLink} to="/Projects" style={linkStyle}>click here...</Link>
+                </Typography>
+
+                <List>
+                  <PiHandTapDuotone
+                    style={{
+                      fontSize: 40,
+                      animation: 'moveIcon 2s ease-in-out forwards infinite',
+                    }}
+                    onAnimationEnd={() => setHighlightLink(true)} // Highlight the link when animation ends
+                  />
+                </List>
+
+                {/* CSS for animation */}
+                <style>
+                  {`
+                    @keyframes moveIcon {
+                      0% {
+                        transform: translateX(25px);
+                      }
+                      25% {
+                        transform: translateY(25px);
+                        }
+                      100% {
+                        transform: translateX(140px); /* Adjust according to your layout */
+                      }
+                    }
+                  `}
+                </style>
+              </>
             </Item>
             <Item style={{ textAlign: 'left' }}>
               <Typography variant="h4">Future Goals:</Typography>
