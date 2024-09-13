@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css",
-    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.8cf3a5f1.js",
+    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.b6fd9c71.js",
     "static/media/Amogh(2).jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh(2).40b5a003e03583712fea.jpg",
     "static/media/achievements.png": "/Amogh-Phadnis-Portfolio/static/media/achievements.fb477a42188b0f3fffb4.png",
     "static/media/Amogh.jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
     "index.html": "/Amogh-Phadnis-Portfolio/index.html",
     "main.47f960c4.css.map": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css.map",
-    "main.8cf3a5f1.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.8cf3a5f1.js.map"
+    "main.b6fd9c71.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.b6fd9c71.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.8cf3a5f1.js"
+    "static/js/main.b6fd9c71.js"
   ]
 }
