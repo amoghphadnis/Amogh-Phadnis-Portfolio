@@ -25,11 +25,11 @@ const Header = () => {
 
   return (
     <AppBar position="sticky" sx={{ backgroundColor: theme.palette.background.default }}>
-      <Toolbar>
+      <Toolbar sx={{backdropFilter: 'blur(10px)', WebkitBackdropFilter: 'blur(10px)'}}>
         <Typography variant="h6" sx={{ flexGrow: 1, color: theme.palette.text.primary }}>
           My Portfolio
         </Typography>
-        
+
         {isMobile ? (
           <>
             {/* Mobile Menu */}
