@@ -23,7 +23,7 @@ const Footer = () => {
             <Fade in timeout={2000}>
               <div style={{ textAlign: 'center', marginTop: 20 }}>
                 <Divider style={{ marginTop: 40 }}>
-                  <Typography variant='h5' align="center" style={{ padding: '10px 0', fontWeight: 600 }}>
+                  <Typography variant='h4' align="center" style={{ fontSize:'2rem', padding: '10px 0', fontWeight: 600 }}>
                     Get in Touch
                   </Typography>
                 </Divider>
@@ -53,19 +53,19 @@ const Footer = () => {
         <Grid container justifyContent="center" spacing={4} style={{ marginTop: 20 }}>
           {/* Social Media Icons */}
           <Grid item>
-            <MuiLink href="mailto:amoghphadnis20@gmail.com" target="_blank"><BiLogoGmail style={{ fontSize: 40, color: '#D32F2F' }} /></MuiLink>
+            <MuiLink href="mailto:amoghphadnis20@gmail.com" aria-label="Gmail" target="_blank"><BiLogoGmail style={{ fontSize: 40, color: '#D32F2F' }} /></MuiLink>
           </Grid>
           <Grid item>
-            <MuiLink href="https://www.linkedin.com/in/amogh-anand-phadnis/" target="_blank"><FaLinkedin style={{ fontSize: 40, color: '#0077b5' }} /></MuiLink>
+            <MuiLink href="https://www.linkedin.com/in/amogh-anand-phadnis/" aria-label="LinkedIn" target="_blank"><FaLinkedin style={{ fontSize: 40, color: '#0077b5' }} /></MuiLink>
           </Grid>
           <Grid item>
-            <MuiLink href="https://github.com/amoghphadnis" target="_blank"><FaGithub style={{ fontSize: 40, color: '#333' }} /></MuiLink>
+            <MuiLink href="https://github.com/amoghphadnis" aria-label="GitHub" target="_blank"><FaGithub style={{ fontSize: 40, color: '#333' }} /></MuiLink>
           </Grid>
           <Grid item>
-            <MuiLink href="https://www.instagram.com/amoghphadnis/" target="_blank"><FaInstagram style={{ fontSize: 40, color: '#e4405f' }} /></MuiLink>
+            <MuiLink href="https://www.instagram.com/amoghphadnis/" aria-label="Instagram" target="_blank"><FaInstagram style={{ fontSize: 40, color: '#e4405f' }} /></MuiLink>
           </Grid>
           <Grid item>
-            <MuiLink href={AmoghPhadnis} download><FaFilePdf style={{ fontSize: 40, color: '#E8CF73' }} /></MuiLink>
+            <MuiLink href={AmoghPhadnis} download aria-label="Resume"><FaFilePdf style={{ fontSize: 40, color: '#E8CF73' }} /></MuiLink>
           </Grid>
         </Grid>
         <Typography variant="body2" align="center">

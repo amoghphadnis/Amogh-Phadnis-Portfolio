@@ -52,7 +52,7 @@ const Home = () => {
       </Grow>
 
       <Fade in timeout={1500}>
-        <Typography variant="h3" align="center" gutterBottom style={{ fontWeight: 600 }}>
+        <Typography variant="h1" align="center" gutterBottom style={{ fontSize:'2.5rem', fontWeight: 600 }}>
           Hi, This is Amogh Phadnis
         </Typography>
       </Fade>
@@ -77,7 +77,7 @@ const Home = () => {
 
       {/* Skills Divider */}
       <Divider>
-        <Typography variant='h5' align="center" style={{ padding: '10px 0', fontWeight: 600 }}>
+        <Typography variant='h2' align="center" style={{fontSize:'2rem', padding: '10px 0', fontWeight: 600 }}>
           Skills
         </Typography>
       </Divider>
@@ -124,7 +124,7 @@ const Home = () => {
       {/* Projects Section */}
       <div ref={refProjects}>
         <Divider style={{ marginTop: 40 }}>
-          <Typography variant='h5' align="center" style={{ padding: '10px 0', fontWeight: 600 }}>
+          <Typography variant='h3' align="center" style={{fontSize:'2rem', padding: '10px 0', fontWeight: 600 }}>
             Projects
           </Typography>
         </Divider>

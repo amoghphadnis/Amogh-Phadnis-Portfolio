@@ -61,7 +61,7 @@ const Header = ({ toggleDarkMode, darkMode }) => {
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', padding: { xs: '0 1rem', sm: '0 2rem' } }} style={{color: theme.palette.mode === 'dark' ? '#59EBCB' : '#2C3F50'}}>
         <Typography
-          variant="h6"
+          variant="h5"
           sx={{
             flexGrow: 1,
             fontWeight: 'bold',
