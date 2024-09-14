@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Container, Typography, Avatar, List, ListItem, Button, Link } from '@mui/material';
+import { Container, Typography, List, ListItem, Link } from '@mui/material';
 import { PiHandTapDuotone } from "react-icons/pi";
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import Amogh2 from '../Images/Amogh(2).jpg';
-import Character3D from '../components/Character3D'; // Assume you have a component for 3D characters
+import Media from '../components/Character3D';
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -37,7 +36,7 @@ const About = () => {
   };
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <Container>
+    <Container style={{marginTop: '50px'}}>
       <Typography variant="h3" style={{ fontWeight: 'bold', marginTop: '2rem', fontSize: '2em' }}>
         Amogh Anand Phadnis
       </Typography>
@@ -53,17 +52,19 @@ const About = () => {
             <>
               <Grid item xs={12} md={4}>
                 <Item>
-                  <Avatar
-                    variant="square"
-                    alt="Amogh Phadnis"
-                    src={Amogh2}
-                    style={{
-                      width: '100%',
-                      height: 'auto',
-                      borderRadius: '25px',
-                      filter: 'drop-shadow(0px 2px 15px rgba(255,255,255,0.5))',
+                  <Box
+                    sx={{
+                      '&:hover': {
+                        transform: 'scale(1.2)',
+                        transition: 'transform 0.5s, box-shadow 0.5s',
+                      },
                     }}
-                  />
+                  >
+                    <Media
+                      characterType="AmoghIntroduction"
+                      description="Amogh Phadnis's Introductory Image"
+                    />
+                  </Box>
                 </Item>
               </Grid>
               <Grid item xs={12} md={8}>
@@ -154,17 +155,19 @@ const About = () => {
               </Grid>
               <Grid item xs={12} md={4}>
                 <Item>
-                  <Avatar
-                    variant="square"
-                    alt="Amogh Phadnis"
-                    src={Amogh2}
-                    style={{
-                      width: '100%',
-                      height: 'auto',
-                      borderRadius: '25px',
-                      filter: 'drop-shadow(0px 2px 15px rgba(255,255,255,0.5))',
+                  <Box
+                    sx={{
+                      '&:hover': {
+                        transform: 'scale(1.2)',
+                        transition: 'transform 0.5s, box-shadow 0.5s',
+                      },
                     }}
-                  />
+                  >
+                    <Media
+                      characterType="AmoghIntroduction"
+                      description="Amogh Phadnis's Introductory Image"
+                    />
+                  </Box>
                 </Item>
               </Grid>
             </>
@@ -182,9 +185,9 @@ const About = () => {
                     },
                   }}
                 >
-                  <Character3D
+                  <Media
                     characterType="Achievements"
-                    description="3D character working on code"
+                    description="Amogh Phadnis's Achievements"
                   />
                 </Box>
               </Item>
@@ -224,31 +227,6 @@ const About = () => {
               <Typography variant="body1">
                 As I look ahead, my goal is to create innovative, impactful applications that bridge the gap between users and technology. I aspire to lead development teams and contribute to shaping the future of web development.
               </Typography>
-            </Item>
-          </Grid>
-
-          {/* Call to Action Section with 3D Character */}
-          <Grid item xs={12}>
-            <Item>
-              <Typography variant="h4">Get in Touch:</Typography>
-              <Button variant='contained' component={Link} to="/Contact" loading="lazy" style={{
-                background: theme.palette.mode === 'dark' ? 'linear-gradient(to right bottom, #0172AF, #74FEBD)' : 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
-                color: theme.palette.mode === 'dark' ? '#000000' : '#000000',
-                borderRadius: 12,
-                boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-                transition: 'transform 0.3s ease-in-out, box-shadow 0.3s',
-                padding: 10
-              }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'scale(1.05)';
-                  e.currentTarget.style.boxShadow = '0px 6px 16px rgba(0, 0, 0, 0.3)';
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
-                }}>
-                Contact
-              </Button>
             </Item>
           </Grid>
         </Grid>

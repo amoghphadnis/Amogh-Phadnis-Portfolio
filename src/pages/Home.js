@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container, Typography, Card, CardContent, CardHeader, Grid, Button, Grow, Fade, Slide, Divider, Link as MuiLink, Avatar } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Amogh from '../Images/Amogh.jpg';
-import { FaCss3Alt, FaPhp, FaCode, FaReact, FaBootstrap, FaNodeJs, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaCss3Alt, FaPhp, FaCode, FaReact, FaBootstrap, FaNodeJs, FaGithub } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { GrStorage } from "react-icons/gr";
 import { MdOutlineComputer } from "react-icons/md";
@@ -34,7 +34,7 @@ const Home = () => {
   const [refTechStack, inViewTechStack] = useInView({ triggerOnce: true, threshold: 0.2 });
 
   return (
-    <Container align="center" style={{ paddingTop: 20, color: theme.palette.mode === 'dark' ? '#59EBCB' : '#2C3F50' }}>
+    <Container align="center" style={{marginTop:'50px', paddingTop: 20, color: theme.palette.mode === 'dark' ? '#59EBCB' : '#2C3F50' }}>
       {/* Avatar and Introduction Section */}
       <Grow in timeout={1000}>
         <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20 }}>
@@ -206,58 +206,14 @@ const Home = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid  container justifyContent="center" spacing={4} style={{ marginTop: 10 }}>
+            <Grid container justifyContent="center" spacing={4} style={{ marginTop: 10 }}>
               <Grid item>
-                <MuiLink component={Link} to="/Projects" style={{textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none'}}>{'View all Projects'}</MuiLink>
+                <MuiLink component={Link} to="/Projects" style={{ textDecoration: theme.palette.mode === 'dark' ? 'none' : 'none' }}>{'View all Projects'}</MuiLink>
               </Grid>
             </Grid>
           </Grid>
         </Slide>
       </div>
-
-      {/* Call-to-Action Section */}
-      <div style={{marginTop: 40}}>
-      <Fade in timeout={2000}>
-        <div style={{ textAlign: 'center', marginTop: 20 }}>
-        <Divider style={{ marginTop: 40 }}>
-          <Typography variant='h5' align="center" style={{ padding: '10px 0', fontWeight: 600 }}>
-            Get in Touch
-          </Typography>
-        </Divider>
-          <Button variant='contained' component={Link} to="/Contact" loading="lazy" style={{
-            background: theme.palette.mode === 'dark' ? 'linear-gradient(to right bottom, #0172AF, #74FEBD)' : 'linear-gradient(to right bottom, #0172AF, #74FEBD)',
-            color: theme.palette.mode === 'dark' ? '#000000' : '#000000',
-            borderRadius: 12,
-            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-            transition: 'transform 0.3s ease-in-out, box-shadow 0.3s',
-            padding: 10
-          }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-              e.currentTarget.style.boxShadow = '0px 6px 16px rgba(0, 0, 0, 0.3)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0px 4px 10px rgba(0, 0, 0, 0.2)';
-            }}>
-            Contact
-          </Button>
-        </div>
-        </Fade>
-        </div>
-
-        <Grid container justifyContent="center" spacing={4} style={{ marginTop: 20 }}>
-            {/* Tech Stack Icons */}
-            <Grid item>
-              <MuiLink href="https://www.linkedin.com/in/amogh-anand-phadnis/" target="_blank"><FaLinkedin style={{ fontSize: 40 }} /></MuiLink>
-            </Grid>
-            <Grid item>
-            <MuiLink href="https://www.instagram.com/amoghphadnis/" target="_blank"><FaInstagram style={{ fontSize: 40 }} /></MuiLink>
-            </Grid>
-            <Grid item>
-            <MuiLink href="https://github.com/amoghphadnis" target="_blank"><FaGithub style={{ fontSize: 40 }} /></MuiLink>
-            </Grid>
-          </Grid>
 
     </Container >
   );

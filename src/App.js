@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Brightness4Icon from '@mui/icons-material/Brightness4';
-import Brightness7Icon from '@mui/icons-material/Brightness7';
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -53,23 +50,16 @@ const App = () => {
             backgroundAttachment: 'fixed',
           }}
         >
-          <Header />
+          {/* Passing darkMode and toggleDarkMode to Header */}
+          <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <Box sx={{ display: 'flex', flex: 1 }}>
-            {/* <Sidebar /> */}
             <Box sx={{ flex: 1, padding: 2 }}>
-              <IconButton
-                sx={{ position: 'absolute', top: 80, right: 20 }}
-                onClick={toggleDarkMode}
-                color="inherit"
-              >
-                <Typography variant="body2">Switch Theme</Typography>
-                {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-              </IconButton>
+              {/* Routes */}
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Projects" element={<Projects />} />
-                <Route path="/Contact" element={<Contact />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
               </Routes>
             </Box>
           </Box>
