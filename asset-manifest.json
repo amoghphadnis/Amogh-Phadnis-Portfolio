@@ -1,16 +1,26 @@
 {
   "files": {
     "main.css": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css",
-    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.93a1c025.js",
-    "static/media/Amogh(2).jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh(2).40b5a003e03583712fea.jpg",
+    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.11f6e9af.js",
+    "static/media/WatchWorld_Home.png": "/Amogh-Phadnis-Portfolio/static/media/WatchWorld_Home.71b0288ed8fdf2b4dc3b.png",
+    "static/media/GamingAccessories_Home_Desktop.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Home_Desktop.5c415f6156f77a40d498.png",
+    "static/media/GamingAccessories_Home_Mobile.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Home_Mobile.13f1ec2dd2abfac6f922.png",
+    "static/media/Amogh2.jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh2.40b5a003e03583712fea.jpg",
+    "static/media/WatchWorld_Cart.png": "/Amogh-Phadnis-Portfolio/static/media/WatchWorld_Cart.5c74850d86f2c4e3141d.png",
+    "static/media/WatchWorld_Admin.png": "/Amogh-Phadnis-Portfolio/static/media/WatchWorld_Admin.6915d7ccdf84bbe869ea.png",
+    "static/media/AmoghPhadnis.pdf": "/Amogh-Phadnis-Portfolio/static/media/AmoghPhadnis.ac886d49b175b9b6db1e.pdf",
     "static/media/achievements.png": "/Amogh-Phadnis-Portfolio/static/media/achievements.fb477a42188b0f3fffb4.png",
+    "static/media/EMS_1.png": "/Amogh-Phadnis-Portfolio/static/media/EMS_1.29443679e7a0782f8533.png",
     "static/media/Amogh.jpg": "/Amogh-Phadnis-Portfolio/static/media/Amogh.82e5486c6eedca9c8f77.jpg",
+    "static/media/GamingAccessories_Cart_Desktop.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Cart_Desktop.66243ba7f7349b873bc6.png",
+    "static/media/GamingAccessories_Cart_Mobile.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Cart_Mobile.a6d80cfaf28cdfa2509d.png",
+    "static/media/EMS_2.png": "/Amogh-Phadnis-Portfolio/static/media/EMS_2.87376c8a1b76110fad94.png",
     "index.html": "/Amogh-Phadnis-Portfolio/index.html",
     "main.47f960c4.css.map": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css.map",
-    "main.93a1c025.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.93a1c025.js.map"
+    "main.11f6e9af.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.11f6e9af.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.93a1c025.js"
+    "static/js/main.11f6e9af.js"
   ]
 }
