@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css",
-    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.11f6e9af.js",
+    "main.js": "/Amogh-Phadnis-Portfolio/static/js/main.884be509.js",
     "static/media/WatchWorld_Home.png": "/Amogh-Phadnis-Portfolio/static/media/WatchWorld_Home.71b0288ed8fdf2b4dc3b.png",
     "static/media/GamingAccessories_Home_Desktop.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Home_Desktop.5c415f6156f77a40d498.png",
     "static/media/GamingAccessories_Home_Mobile.png": "/Amogh-Phadnis-Portfolio/static/media/GamingAccessories_Home_Mobile.13f1ec2dd2abfac6f922.png",
@@ -17,10 +17,10 @@
     "static/media/EMS_2.png": "/Amogh-Phadnis-Portfolio/static/media/EMS_2.87376c8a1b76110fad94.png",
     "index.html": "/Amogh-Phadnis-Portfolio/index.html",
     "main.47f960c4.css.map": "/Amogh-Phadnis-Portfolio/static/css/main.47f960c4.css.map",
-    "main.11f6e9af.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.11f6e9af.js.map"
+    "main.884be509.js.map": "/Amogh-Phadnis-Portfolio/static/js/main.884be509.js.map"
   },
   "entrypoints": [
     "static/css/main.47f960c4.css",
-    "static/js/main.11f6e9af.js"
+    "static/js/main.884be509.js"
   ]
 }
