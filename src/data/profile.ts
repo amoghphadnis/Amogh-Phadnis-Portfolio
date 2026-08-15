@@ -10,6 +10,6 @@ export const profile: Profile = {
   linkedInUrl: 'https://www.linkedin.com/in/amogh-anand-phadnis/',
   githubUrl: 'https://github.com/amoghphadnis',
   instagramUrl: 'https://www.instagram.com/amoghphadnis/',
-  resumeUrl: '/AmoghPhadnis.pdf',
+  resumeUrl: './Amogh_Anand_Phadnis_Software_Developer_Resume_2026.pdf',
   summary: `I build enterprise web applications, internal tools, dashboards, and workflow automation systems. At Godavari Biorefineries Ltd, I work on production reporting, farmer-facing platforms, internal ticketing, notification workflows, and operational UX improvements. I also build freelance products such as the NGO App using modern React and React Native workflows. My focus is on clean architecture, reliable integrations, and practical software that improves day-to-day operations.`,
 };
