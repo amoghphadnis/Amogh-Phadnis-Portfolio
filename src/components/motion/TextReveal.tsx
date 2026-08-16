@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Box } from '@mui/material';
+import { tokens } from '../../theme/tokens';
 
 interface TextRevealProps {
   text: string;
@@ -9,6 +10,8 @@ interface TextRevealProps {
   className?: string;
   sx?: Record<string, unknown>;
 }
+
+const headingTags = new Set(['h1', 'h2', 'h3', 'h4']);
 
 export function TextReveal({ text, as: Tag = 'span', delay = 0, sx = {} }: TextRevealProps) {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
@@ -25,6 +28,7 @@ export function TextReveal({ text, as: Tag = 'span', delay = 0, sx = {} }: TextR
       sx={{
         display: 'inline-flex',
         flexWrap: 'wrap',
+        fontFamily: headingTags.has(Tag) ? tokens.typography.fontFamilyHeading : undefined,
         ...sx,
       }}
       aria-label={text}

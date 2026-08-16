@@ -28,7 +28,7 @@ export function Home() {
           <Box textAlign="center" mb={6}>
             <Avatar
               alt={profile.name}
-              src="/images/Amogh.jpg"
+              src={`${import.meta.env.BASE_URL}images/Amogh.jpg`}
               sx={{
                 width: 180,
                 height: 180,
@@ -57,12 +57,35 @@ export function Home() {
                 justifyContent: 'center',
                 fontSize: { xs: '1.25rem', sm: '1.5rem' },
                 fontWeight: 600,
-                mb: 2,
+                mb: 1,
                 color: 'primary.main',
               }}
             />
-            <Typography variant="body1" color="text.secondary" sx={{ maxWidth: 720, mx: 'auto', mb: 3 }}>
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{
+                maxWidth: 720,
+                mx: 'auto',
+                mb: 2,
+                fontSize: { xs: '1rem', sm: '1.1rem' },
+                lineHeight: 1.5,
+              }}
+            >
               {profile.headline}
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              color="primary"
+              sx={{
+                maxWidth: 640,
+                mx: 'auto',
+                mb: 3,
+                fontWeight: 500,
+                letterSpacing: 0.5,
+              }}
+            >
+              {profile.tagline}
             </Typography>
 
             <Box display="flex" gap={2} justifyContent="center" flexWrap="wrap" mb={4}>
@@ -103,6 +126,14 @@ export function Home() {
                 sx={{ borderRadius: tokens.radius.button, fontWeight: 600 }}
               >
                 LinkedIn
+              </Button>
+              <Button
+                component={Link}
+                to="/contact"
+                variant="outlined"
+                sx={{ borderRadius: tokens.radius.button, fontWeight: 600 }}
+              >
+                Get in Touch
               </Button>
             </Box>
           </Box>
@@ -167,7 +198,7 @@ export function Home() {
             <Typography variant="h3" sx={{ fontSize: '1.75rem', fontWeight: 700, mb: 3 }}>
               Technology
             </Typography>
-            <Box display="flex" flexWrap="wrap" justifyContent="center" gap={1}>
+            <Box display="flex" flexWrap="wrap" justifyContent="center" gap={1} mb={4}>
               {skillGroups.flatMap((g) => g.items).map((skill) => (
                 <Chip
                   key={skill}
@@ -181,6 +212,23 @@ export function Home() {
                 />
               ))}
             </Box>
+            <Button
+              component={Link}
+              to="/contact"
+              variant="contained"
+              sx={{
+                background: tokens.colors.accent.gradient,
+                color: tokens.colors.accent.black,
+                borderRadius: tokens.radius.button,
+                px: 3,
+                py: 1.5,
+                fontWeight: 700,
+                '&:hover': { transform: 'scale(1.05)' },
+                transition: `transform ${tokens.motion.normal} ease`,
+              }}
+            >
+              Let's work together
+            </Button>
           </Box>
         </FadeIn>
       </Container>

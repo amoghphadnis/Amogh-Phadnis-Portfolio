@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, Box, Button, Chip } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, Box, Button, Chip } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
@@ -37,6 +37,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
           color: theme.palette.text.primary,
           borderRadius: tokens.radius.card,
           boxShadow: tokens.shadows.card,
+          overflow: 'hidden',
+          cursor: 'pointer',
           transition: `transform ${tokens.motion.normal} ease, box-shadow ${tokens.motion.normal} ease`,
           '&:hover': {
             transform: 'translateY(-4px)',
@@ -44,6 +46,19 @@ export function ProjectCard({ project }: ProjectCardProps) {
           },
         }}
       >
+        {project.image && (
+          <CardMedia
+            component="img"
+            image={project.image ? import.meta.env.BASE_URL + encodeURI(project.image) : undefined}
+            alt={project.title}
+            sx={{
+              height: 160,
+              width: '100%',
+              objectFit: 'cover',
+              backgroundColor: theme.palette.background.default,
+            }}
+          />
+        )}
         <CardContent sx={{ display: 'flex', flexDirection: 'column', gap: 1.5, p: 3 }}>
           <Typography variant="overline" color="primary" sx={{ fontWeight: 600 }}>
             {categoryLabels[project.category]}
@@ -54,6 +69,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Typography variant="h6" sx={{ fontWeight: 700 }}>
             {project.title}
           </Typography>
+
+          {project.impact && (
+            <Typography variant="body2" color="primary" sx={{ fontWeight: 600 }}>
+              {project.impact}
+            </Typography>
+          )}
 
           <Typography variant="body2" color="text.secondary" sx={{ flex: 1 }}>
             {project.description}

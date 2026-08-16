@@ -47,7 +47,9 @@ export interface Project {
   freelance?: boolean;
   confidential?: boolean;
   githubUrl?: string;
+  liveUrl?: string;
   image?: string;
+  impact?: string;
 }
 
 export interface ArchitectureStep {
