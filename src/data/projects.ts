@@ -21,7 +21,7 @@ export const projects: Project[] = [
     description:
       'Modernized billing workflows with Oracle integration, PDF generation, local printing, queue-based processing, and analytics instrumentation.',
     impact: 'Reduced manual billing and print handling across the distribution team.',
-    image: 'images/Banners/hero.webp',
+    image: 'images/Projects/Sugar Distribution Platform.png',
     technologies: ['Laravel', 'PHP', 'Oracle', 'PHPWord', 'Queue'],
     featured: true,
     confidential: true,
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     description:
       'Real-time manufacturing dashboards using React, Electron, WebSocket, and AG Charts.',
     impact: 'Gave operators live plant telemetry without manual data checks.',
-    image: 'images/Banners/hero3.png',
+    image: 'images/Projects/Plant Monitoring.png',
     technologies: ['React', 'Electron', 'WebSocket', 'AG Charts'],
     featured: true,
     confidential: true,
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     description:
       'Computer vision pipeline using FastAPI, OpenCV, and RTSP streams for operational measurement.',
     impact: 'Reduced manual cane-inspection time with computer vision.',
-    image: 'images/Banners/hero2.jpg',
+    image: 'images/Projects/Cane Trash Monitoring.png',
     technologies: ['Python', 'FastAPI', 'OpenCV', 'RTSP', 'React'],
     featured: true,
     confidential: true,

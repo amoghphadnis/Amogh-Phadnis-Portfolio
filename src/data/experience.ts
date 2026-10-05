@@ -5,7 +5,7 @@ export const experience: ExperienceItem[] = [
     id: 'gbl',
     role: 'Software Developer',
     company: 'Godavari Biorefineries Ltd.',
-    location: 'India',
+    location: 'Sameerwadi | India',
     startDate: '2025',
     endDate: 'Present',
     bullets: [
@@ -20,7 +20,7 @@ export const experience: ExperienceItem[] = [
     id: 'rekn',
     role: 'Full-Stack Developer',
     company: 'Reknowledge Inc.',
-    location: 'Remote',
+    location: 'Canada | Remote',
     startDate: '2023',
     endDate: '2025',
     bullets: [
@@ -32,7 +32,7 @@ export const experience: ExperienceItem[] = [
     id: 'dgate',
     role: 'Full-Stack Web Developer',
     company: 'DGate Integrated Services',
-    location: 'India',
+    location: 'Bangalore | India',
     startDate: '2022',
     endDate: '2023',
     bullets: [

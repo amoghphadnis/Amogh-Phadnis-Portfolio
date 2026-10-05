@@ -212,23 +212,6 @@ export function Home() {
                 />
               ))}
             </Box>
-            <Button
-              component={Link}
-              to="/contact"
-              variant="contained"
-              sx={{
-                background: tokens.colors.accent.gradient,
-                color: tokens.colors.accent.black,
-                borderRadius: tokens.radius.button,
-                px: 3,
-                py: 1.5,
-                fontWeight: 700,
-                '&:hover': { transform: 'scale(1.05)' },
-                transition: `transform ${tokens.motion.normal} ease`,
-              }}
-            >
-              Let's work together
-            </Button>
           </Box>
         </FadeIn>
       </Container>
